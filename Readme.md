@@ -26,12 +26,13 @@ sh execute.sh [path] [type]
   c. routerApiMap.json		路由与 API 的对应关系
 根据分析经验，本项目不具备普适性，仅限于针对某几类结构相似的项目去进行分析，但整个分析范式是确定的，在使用本项目时，可以根据各自的项目进行调整，全局搜索 special 可以进行调整。
 
-项目设计思路
+## 项目设计思路
 有关如何拿到文件的 AST 需要使用到这个在线工具：https://astexplorer.net/
 针对「路由 API 关系分析」这一问题，总结出以下解决范式：
-Step 1：生成组件与 API 的对应关系
-Step 2：生成组件之间的相互引用关系树
-Step 3：生成路由与 API 的对应关系
+
+- Step 1：生成组件与 API 的对应关系
+- Step 2：生成组件之间的相互引用关系树
+- Step 3：生成路由与 API 的对应关系
 
 包含了流程图的链接为：https://www.yuque.com/manzhifenjie/az7sda/spvdzrfutfn4u4nw?singleDoc# 《路由 Api 关系分析工具》
 ### Step 1：生成组件与 API 的对应关系
