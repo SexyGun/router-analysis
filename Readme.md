@@ -51,6 +51,7 @@ Step 3：生成路由与 API 的对应关系
 - dispatch 的定义结构
 - service 的定义结构
 - router 的定义结构
+```
 .
 ├── execute.sh	// 执行脚本
 ├── getAnalysisPluginMap.js		// react 与 vue 分析插件 Map
@@ -91,3 +92,4 @@ Step 3：生成路由与 API 的对应关系
 │       └── plugins
 │           └── generateSourceMapTree.js
 └── vue_temp_ts_dir		// 生成 vue Ast 所需的临时代码片段存放目录
+```
