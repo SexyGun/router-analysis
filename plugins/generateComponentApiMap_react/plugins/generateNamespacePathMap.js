@@ -169,7 +169,6 @@ exports.generateNamespacePathMap = function (analysisContext) {
             serviceMethodApiMap[`${namespace}/${effect.serviceName}`];
         });
       });
-      console.log(namespacePathMap);
       return true; // true: 插件执行成功, 继续执行后序插件; false 不执行后续插件
     }
   

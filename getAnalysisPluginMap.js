@@ -30,11 +30,6 @@ const { pluginList: generateRouterApiMap_vue } = require(path.join(
   "./plugins/generateRouterApiMap_vue"
 )); // generateRouterApiMap_vue 分析插件
 
-const { pluginList: generateRouterArr } = require(path.join(
-  __dirname,
-  "./plugins/generateRouterArr"
-)); // generateRouterArr 分析插件
-
 exports.getAnalysisPluginMap = (type) => {
   const typeMap = {
     vue: {
@@ -47,9 +42,6 @@ exports.getAnalysisPluginMap = (type) => {
       stepTwoPluginList: generateSourceMapTree_react,
       stepThreePluginList: generateRouterApiMap_react,
     },
-    tool: {
-      toolPluginList: generateRouterArr,
-    }
   };
   return typeMap[type];
 };

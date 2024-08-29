@@ -107,9 +107,10 @@ exports.generateRouterApiMap = function (analysisContext) {
             componentPath
           );
         }
+        // special 针对特定项目的特殊处理
         const _absolateComponentPath = absolateComponentPath.replace(
-          "fe-pc-hms/config/routers",
-          "fe-pc-hms/src/pages"
+          "fe-core/config/router",
+          "fe-core/src/pages"
         ); 
         if (analysisContext.componentApiMap[_absolateComponentPath]) {
           handleRouteComponent(_absolateComponentPath, name, routerPath);
@@ -154,8 +155,9 @@ exports.generateRouterApiMap = function (analysisContext) {
 
   function generateRouterApiMap(context) {
     const { _scanFileAbsolutePath, createProgram } = context;
+    // special 获取所有路由文件（根据自己的项目来进行配置）
     const routerFiles = glob.sync(
-      `${_scanFileAbsolutePath}/config/routers/*.js`
+      `${_scanFileAbsolutePath}/config/router/*.js`
     );
     const routerProgram = createProgram(routerFiles).program;
     routerFiles.forEach((route) => {

@@ -1,6 +1,6 @@
 const Excel = require("exceljs");
 
-const PUBLIC_PATH = "https://c4-uat.longfor.com";
+const PUBLIC_PATH = "";
 const CONTENT_PATH = "media";
 exports.jsonToExcel = function (analysisContext) {
   async function jsonToExcel() {

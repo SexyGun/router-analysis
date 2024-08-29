@@ -1,6 +1,6 @@
 const Excel = require("exceljs");
 
-const PUBLIC_PATH = "https://tang-uat.longfor.com";
+const PUBLIC_PATH = "";
 const CONTENT_PATH = "hms";
 
 exports.jsonToExcel = function (analysisContext) {
