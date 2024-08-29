@@ -13,9 +13,11 @@
 1. 在终端进入要分析的项目，输入 pwd，找到项目的绝对路径；
 2. 在终端进入本项目，npm i
 3. 执行脚本
+```
 sh execute.sh [path] [type]
 # path 为待分析项目的绝对路径
 # type 为待分析的类型，枚举为 react vue
+```
 4. 即可得到三个阶段的产物
   a. componentApiMap.json	组件与 API 的对应关系
   b. componentTree.json		组件之间的相互引用关系树
